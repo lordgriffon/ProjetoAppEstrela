@@ -4,29 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Activity"
+    android:background="@color/corFundo"
     android:orientation="vertical"
-    android:background="#D56F63">
+    tools:context=".Login_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="25dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="Sign In"
-            android:textSize="24sp"
             android:textColor="#fff"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:text="User Name/email adress"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/caixa_texto"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Password"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/caixa_texto"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:background="@color/corFundoClaro"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Create a new account"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:background="@color/corFundoClaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
